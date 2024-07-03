@@ -1,0 +1,81 @@
+.add-note-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.add-note-card {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.add-note-card h2 {
+  margin-top: 0;
+}
+
+.add-note-card label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.add-note-card input,
+.add-note-card textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+}
+
+.add-note-card button[type="submit"] {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-note-card button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+  .add-note-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40%;
+  }
+  .add-note-card {
+    padding: 15px;
+  }
+  .add-note-card input,
+  .add-note-card textarea {
+    padding: 8px;
+    margin-bottom: 15px;
+  }
+  .add-note-card button[type="submit"] {
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .add-note-card {
+    padding: 10px;
+  }
+  .add-note-card input,
+  .add-note-card textarea {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  .add-note-card button[type="submit"] {
+    padding: 5px 10px;
+  }
+}

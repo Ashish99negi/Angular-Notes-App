@@ -1,0 +1,34 @@
+<div class="add-note-container">
+  <div class="add-note-card">
+    <form [formGroup]="addNoteForm" (ngSubmit)="onSubmit()">
+      <h2>Add Note</h2>
+      <label>Title:</label>
+      <input formControlName="noteTitle" type="text" required />
+      <div
+        *ngIf="
+          addNoteForm.get('noteTitle')!.invalid &&
+          addNoteForm.get('noteTitle')!.touched
+        "
+      >
+        <small *ngIf="addNoteForm.get('noteTitle')">Title is required</small>
+      </div>
+      <br />
+      <label>Content:</label>
+      <textarea formControlName="noteContent" required></textarea>
+      <div
+        *ngIf="
+          addNoteForm.get('noteContent')!.invalid &&
+          addNoteForm.get('noteContent')!.touched
+        "
+      >
+        <small *ngIf="addNoteForm.get('noteContent')"
+          >Content is required</small
+        >
+      </div>
+      <br />
+      <button mat-button type="submit" [disabled]="!addNoteForm.valid">
+        Save Note
+      </button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div class="card-container">
+  <div class="card" *ngFor="let note of notes">
+    <p>
+      <b>{{ note.title }}</b>
+
+      <i class="fas fa-trash" (click)="deleteNote(note)"></i>
+    </p>
+    <p>{{ note.content }}</p>
+  </div>
+</div>

@@ -1,0 +1,67 @@
+nav {
+  /* background-color: #0077dd; */
+  background-image: url("https://st4.depositphotos.com/24452164/25968/i/450/depositphotos_259686622-stock-photo-violet-purple-blue-background-beautiful.jpg");
+  background-size: cover;
+  /* background-position: center; */
+}
+
+.fancy-title {
+  font-family: "Brush Script MT", cursive;
+  font-size: 60px;
+  font-weight: bold;
+  color: #efdbe2;
+  cursor: pointer;
+}
+
+.add-notes-btn {
+  position: absolute;
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  right: 20px;
+}
+
+.add-notes-btn:hover {
+  background-color: #3e8e41;
+}
+
+.dialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+  margin: 40px auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-row {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-control:focus {
+  border-color: #aaa;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

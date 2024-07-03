@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  /* background-color: #f5f5f5; */
+  background-image: url("https://st4.depositphotos.com/24452164/25968/i/450/depositphotos_259686622-stock-photo-violet-purple-blue-background-beautiful.jpg");
+  height: 100%;
+  background-size: cover;
+}
+
+.main-container {
+  background-image: url("https://st4.depositphotos.com/24452164/25968/i/450/depositphotos_259686622-stock-photo-violet-purple-blue-background-beautiful.jpg");
+  height: 100%;
+  background-size: cover;
+  /* background-position: center; */
+}
