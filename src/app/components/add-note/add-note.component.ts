@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { NotesService } from 'src/app/services/notes.service';
 
 @Component({
@@ -10,7 +11,7 @@ import { NotesService } from 'src/app/services/notes.service';
 export class AddNoteComponent implements OnInit {
   addNoteForm!: FormGroup;
 
-  constructor(private notesService: NotesService) {}
+  constructor(private notesService: NotesService, private router: Router) {}
 
   ngOnInit(): void {
     this.addNoteForm = new FormGroup({
@@ -26,6 +27,7 @@ export class AddNoteComponent implements OnInit {
         content: this.addNoteForm.get('noteContent')?.value,
       };
       this.notesService.addNote(note);
+      this.router.navigate(['/notes']);
       this.addNoteForm.reset();
     }
   }
